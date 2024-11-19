@@ -10,6 +10,26 @@ class HabitHorizon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return const MaterialApp(title: 'Habit Horizo', home: SignUpScreen());
+=======
+    return const MaterialApp(
+      title: 'Habit Horizon App',
+      home: AppHomePage(),
+    );
+  }
+}
+
+class AppHomePage extends StatelessWidget {
+  const AppHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Center(
+        
+      ),
+    );
+>>>>>>> 711b9f3ab22ebd425389109473b5c901f8b15e9e
   }
 }
