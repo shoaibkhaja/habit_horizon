@@ -1,9 +1,6 @@
 import "package:flutter/material.dart";
 import "package:flutter_svg/flutter_svg.dart";
-import "package:habit_horizon/pages/sign_up.dart";
-import "package:habit_horizon/widgets/custom_colored_button.dart";
 import "package:habit_horizon/widgets/custom_outlined_button_with_icon.dart";
-import "package:habit_horizon/widgets/custom_textfield.dart";
 
 void main() {
   runApp(const HabitHorizon());
@@ -24,9 +21,8 @@ class AppHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: CustomOulinedButtonWithIcon(buttonText: 'Signup with google', onTap: (){}, buttonIcon: SvgPicture.asset('assetName')
-      ),
+      body: const Center(
+       
       )
     );
   }
