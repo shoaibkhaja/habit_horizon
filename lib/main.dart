@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import 'package:habit_horizon/widgets/custom_outlined_button.dart';
+import "package:habit_horizon/pages/sign_up.dart";
 
 void main() {
   runApp(const HabitHorizon());
@@ -10,10 +10,7 @@ class HabitHorizon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Habit Horizon App',
-      home: AppHomePage(),
-    );
+    return const MaterialApp(title: 'Habit Horizo', home: SignUpScreen());
   }
 }
 
@@ -22,10 +19,8 @@ class AppHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        
-      ),
+    return const Scaffold(
+      body: Center(),
     );
   }
 }
