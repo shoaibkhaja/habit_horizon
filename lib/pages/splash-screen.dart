@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:habit_horizon/pages/sign_up.dart';
+import 'package:habit_horizon/pages/signup_page.dart';
 import 'package:habit_horizon/utils/app_colours.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen>
     Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => SignUpScreen()),
+        MaterialPageRoute(builder: (context) => SignUpPage()),
       );
     });
   }

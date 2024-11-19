@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:habit_horizon/widgets/custom_colored_button.dart'; // Import the flutter_svg package
 
 class Verficationscreen extends StatefulWidget {
   const Verficationscreen({super.key});
-
   @override
   State<Verficationscreen> createState() {
     return _VerficationscreenState(); // Return the corresponding State class
@@ -46,9 +46,9 @@ class _VerficationscreenState extends State<Verficationscreen> {
                 width: 180,
               ),
               const SizedBox(height: 16), // Add spacing between image and text
-              Row(
+              const Row(
                 children: [
-                  const Text(
+                  Text(
                     'Enter verification code',
                     textAlign: TextAlign.left,
                     style: TextStyle(
@@ -86,30 +86,7 @@ class _VerficationscreenState extends State<Verficationscreen> {
                 ),
               ),
               const SizedBox(height: 24), // Reduced spacing before the button
-              ElevatedButton(
-                onPressed: () {
-                  // Handle button press
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple, // Set button color
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, // Increased vertical padding
-                    horizontal: 40.0, // Increased horizontal padding
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius:
-                        BorderRadius.circular(8), // Add rounded corners
-                  ),
-                ),
-                child: const Text(
-                  'Verify',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20, // Slightly larger font size
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
+              CustomColoredButton(buttonText: "Verify", onTap: () {})
             ],
           ),
         ),
