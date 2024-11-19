@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
 import 'package:habit_horizon/widgets/custom_colored_button.dart';
 import 'package:habit_horizon/widgets/custom_outlined_button.dart';
+import 'package:habit_horizon/widgets/custom_outlined_button_with_icon.dart';
 import 'package:habit_horizon/widgets/custom_textfield.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
@@ -86,6 +87,11 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                 style: TextStyle(
                     fontSize: 20, color: Color.fromARGB(255, 127, 126, 126)),
               ),
+              CustomOutlinedButtonWithIcon(
+                  buttonText: "Google",
+                  onTap: () {},
+                  buttonIcon:
+                      Image.asset("assets/welcome_page/google_icon.svg"))
             ],
           ),
         ),
