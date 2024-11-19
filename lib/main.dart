@@ -1,15 +1,16 @@
 import "package:flutter/material.dart";
 
-void main(){
+void main() {
   runApp(const HabitHorizon());
 }
-class HabitHorizon extends StatelessWidget{
+
+class HabitHorizon extends StatelessWidget {
   const HabitHorizon({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Habit Horizon App',
-    )
+    );
   }
 }
