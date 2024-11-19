@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
-import "package:habit_horizon/pages/sign_up.dart";
+import "package:habit_horizon/pages/forgot_password_page.dart";
+import "package:habit_horizon/pages/login_page.dart";
+import "package:habit_horizon/pages/signup_page.dart";
 import "package:habit_horizon/widgets/custom_colored_button.dart";
 
 void main() {
@@ -11,7 +13,10 @@ class HabitHorizon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'Habit Horizo ', home: AppHomePage(),);
+    return const MaterialApp(
+      title: 'Habit Horizo ',
+      home: SignUpPage(),
+    );
   }
 }
 

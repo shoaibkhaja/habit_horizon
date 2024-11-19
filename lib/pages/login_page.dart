@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:habit_horizon/utils/app_colours.dart';
 
-class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
 
   @override
   State<StatefulWidget> createState() {
-    return _SignUpState();
+    return _LoginPageState();
   }
 }
 
-class _SignUpState extends State<SignUpScreen> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,9 +38,12 @@ class _SignUpState extends State<SignUpScreen> {
                   },
                 ),
               ),
-              // Rest of the content
             ],
           ),
+          const Text(
+            "Log In",
+            style: TextStyle(fontSize: 33, color: AppColours.primaryColour),
+          )
         ],
       ),
     );
