@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:habit_horizon/widgets/custom_outlined_button.dart';
 
 void main() {
   runApp(const HabitHorizon());
@@ -21,7 +22,7 @@ class AppHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         
       ),
