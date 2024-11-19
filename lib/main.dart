@@ -16,7 +16,7 @@ class HabitHorizon extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Habit Horizo ',
-      home: SignUpPage(),
+      home: ForgotPasswordPage(),
     );
   }
 }
@@ -28,8 +28,10 @@ class AppHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: CustomTextfield(hintText: 'Enter your user name', labelText: 'User Name', prefixIcon: Icon(Icons.verified_user))
-      ),
+          child: CustomTextfield(
+              hintText: 'Enter your mail',
+              labelText: 'User Name',
+              prefixIcon: Icon(Icons.verified_user))),
     );
   }
 }
