@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "package:habit_horizon/pages/sign_up.dart";
 import "package:habit_horizon/widgets/custom_colored_button.dart";
+import "package:habit_horizon/widgets/custom_textfield.dart";
 
 void main() {
   runApp(const HabitHorizon());
@@ -20,12 +21,9 @@ class AppHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: CustomColoredButton(
-          buttonText: 'Sign up',
-          onTap: () {},
-        ),
+        child: CustomTextfield(hintText: 'Enter your user name', labelText: 'User Name', prefixIcon: Icon(Icons.verified_user))
       ),
     );
   }
