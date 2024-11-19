@@ -9,7 +9,10 @@ class HabitHorizon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'Habit Horizo ', home: AppHomePage(),);
+    return const MaterialApp(
+      title: 'Habit Horizo ',
+      home: ForgotPasswordPage(),
+    );
   }
 }
 
@@ -19,9 +22,11 @@ class AppHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Center(
-       
-      )
+      body: Center(
+          child: CustomTextfield(
+              hintText: 'Enter your user name',
+              labelText: 'User Name',
+              prefixIcon: Icon(Icons.verified_user))),
     );
   }
 }
