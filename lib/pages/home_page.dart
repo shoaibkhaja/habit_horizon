@@ -2,16 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:habit_horizon/pages/user_profile_page.dart';
 import 'package:habit_horizon/utils/app_colours.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  @override
-  State<StatefulWidget> createState() {
-    return _HomePageState();
-  }
-}
-
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,11 +92,12 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          const Expanded(child: SizedBox()),
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          // Floating button logic
+        },
         backgroundColor: AppColours.primaryColour,
         child: const Icon(
           Icons.add,
@@ -111,29 +105,6 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: AppColours.primaryColour,
-        unselectedItemColor: Colors.grey,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.check_circle),
-            label: "Habits",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.bar_chart),
-            label: "Statistics",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: "Settings",
-          ),
-        ],
-      ),
     );
   }
 }

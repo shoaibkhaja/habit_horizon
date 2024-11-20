@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:habit_horizon/utils/app_colours.dart';
 import 'package:habit_horizon/widgets/custom_colored_button.dart';
 import 'package:habit_horizon/widgets/custom_textfield.dart';

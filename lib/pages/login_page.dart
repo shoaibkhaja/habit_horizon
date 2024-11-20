@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:habit_horizon/pages/forgot_password_page.dart';
 import 'package:habit_horizon/pages/signup_page.dart';
 import 'package:habit_horizon/utils/app_colours.dart';

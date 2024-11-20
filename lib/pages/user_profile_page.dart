@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:habit_horizon/pages/home_page.dart';
+import 'package:habit_horizon/widgets/bottom_nav_bar.dart';
 import 'package:habit_horizon/widgets/custom_colored_button.dart';
 import 'package:habit_horizon/widgets/custom_textfield.dart';
 
@@ -104,7 +104,7 @@ class UserProfilePage extends StatelessWidget {
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (ctx) {
-                          return const HomePage();
+                          return const BottomNavBar();
                         }));
                       }))
             ],
