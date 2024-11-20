@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:habit_horizon/utils/app_colours.dart';
+import 'package:habit_horizon/widgets/bottom_nav_bar.dart';
 import 'package:habit_horizon/widgets/custom_colored_button.dart';
 import 'package:habit_horizon/widgets/custom_textfield.dart';
 
@@ -32,16 +33,15 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ),
                 Positioned(
-                  top: 40, // Adjust for spacing
-                  left: 16, // Adjust for spacing
+                  top: 40,
+                  left: 16,
                   child: IconButton(
                     icon: const Icon(Icons.arrow_back, color: Colors.white),
                     onPressed: () {
-                      Navigator.pop(context); // Navigate back
+                      Navigator.pop(context);
                     },
                   ),
                 ),
-                // Rest of the content
               ],
             ),
             const Text(
@@ -83,7 +83,13 @@ class _SignUpPageState extends State<SignUpPage> {
             const SizedBox(
               height: 25,
             ),
-            CustomColoredButton(buttonText: "Sign In", onTap: () {})
+            CustomColoredButton(
+                buttonText: "Sign In",
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+                    return const BottomNavBar();
+                  }));
+                })
           ],
         ),
       ),

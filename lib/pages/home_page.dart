@@ -10,14 +10,13 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          // Top container with rounded edges
           Container(
-            height: 220, // Adjust as needed
+            height: 220,
             decoration: const BoxDecoration(
-              color: AppColours.primaryColour, // Background color
+              color: AppColours.primaryColour,
               borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(20), // Rounded bottom-left corner
-                bottomRight: Radius.circular(20), // Rounded bottom-right corner
+                bottomLeft: Radius.circular(20),
+                bottomRight: Radius.circular(20),
               ),
             ),
             child: Padding(
@@ -95,9 +94,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // Floating button logic
-        },
+        onPressed: () {},
         backgroundColor: AppColours.primaryColour,
         child: const Icon(
           Icons.add,

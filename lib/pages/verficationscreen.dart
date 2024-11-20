@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:habit_horizon/widgets/custom_colored_button.dart'; // Import the flutter_svg package
+import 'package:habit_horizon/pages/signup_page.dart';
+import 'package:habit_horizon/widgets/custom_colored_button.dart';
 
 class Verficationscreen extends StatefulWidget {
   const Verficationscreen({super.key});
   @override
   State<Verficationscreen> createState() {
-    return _VerficationscreenState(); // Return the corresponding State class
+    return _VerficationscreenState();
   }
 }
 
@@ -18,7 +19,7 @@ class _VerficationscreenState extends State<Verficationscreen> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () {
-            Navigator.pop(context); // Navigate back to the previous screen
+            Navigator.pop(context);
           },
         ),
         title: const Text(
@@ -28,9 +29,8 @@ class _VerficationscreenState extends State<Verficationscreen> {
             fontSize: 30,
           ),
         ),
-        backgroundColor:
-            Colors.white, // Ensure the app bar has a white background
-        elevation: 0, // Remove shadow for a cleaner design
+        backgroundColor: Colors.white,
+        elevation: 0,
       ),
       body: Center(
         child: Padding(
@@ -85,7 +85,13 @@ class _VerficationscreenState extends State<Verficationscreen> {
                 ),
               ),
               const SizedBox(height: 24),
-              CustomColoredButton(buttonText: "Verify", onTap: () {})
+              CustomColoredButton(
+                  buttonText: "Verify",
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+                      return const SignUpPage();
+                    }));
+                  })
             ],
           ),
         ),

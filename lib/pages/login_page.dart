@@ -67,8 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                   "assets/signup_and_login_page/key_icon.png",
                 )),
             Padding(
-              padding: const EdgeInsets.only(
-                  right: 16.0), // Adjust the value as needed
+              padding: const EdgeInsets.only(right: 16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [

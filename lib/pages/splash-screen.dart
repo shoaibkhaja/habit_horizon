@@ -19,7 +19,6 @@ class _SplashScreenState extends State<SplashScreen>
   void initState() {
     super.initState();
 
-    // Initialize the animation controller and animation
     _fadeInController = AnimationController(
       duration: const Duration(seconds: 2),
       vsync: this,
@@ -29,11 +28,9 @@ class _SplashScreenState extends State<SplashScreen>
       CurvedAnimation(parent: _fadeInController, curve: Curves.easeIn),
     );
 
-    // Start the fade-in animation
     _fadeInController.forward();
 
-    // Navigate to the next screen after 5 seconds
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => SignUpPage()),

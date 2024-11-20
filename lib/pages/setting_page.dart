@@ -11,9 +11,7 @@ class SettingsScreen extends StatelessWidget {
         appBar: AppBar(
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
-            onPressed: () {
-              // Handle back button press
-            },
+            onPressed: () {},
           ),
           title: const Text("Settings"),
         ),
