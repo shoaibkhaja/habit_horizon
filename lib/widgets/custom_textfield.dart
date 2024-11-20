@@ -27,7 +27,10 @@ class CustomTextfield extends StatelessWidget {
           suffixIcon: suffixIcon,
           hintText: hintText,
           labelText: labelText,
-          labelStyle: const TextStyle(fontSize: 20.00, color: Colors.black),
+          labelStyle: const TextStyle(
+            fontSize: 15.00,
+            color: Colors.black,
+          ),
         ),
       ),
     );

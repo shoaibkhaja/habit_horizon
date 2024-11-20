@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
           const Text(
             "Log In",
             style: TextStyle(fontSize: 33, color: AppColours.primaryColour),
-          )
+          ),
         ],
       ),
     );

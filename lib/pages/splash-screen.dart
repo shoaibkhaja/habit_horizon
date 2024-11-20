@@ -4,7 +4,7 @@ import 'package:habit_horizon/pages/signup_page.dart';
 import 'package:habit_horizon/utils/app_colours.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen>
     _fadeInController.forward();
 
     // Navigate to the next screen after 5 seconds
-    Timer(Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => SignUpPage()),
@@ -60,7 +60,7 @@ class _SplashScreenState extends State<SplashScreen>
           children: [
             FadeTransition(
               opacity: _fadeInAnimation,
-              child: Text(
+              child: const Text(
                 "HABIT HORIZON",
                 style: TextStyle(
                   fontSize: 34,
@@ -69,10 +69,10 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             FadeTransition(
               opacity: _fadeInAnimation,
-              child: Text(
+              child: const Text(
                 "Today Habits Define Your Future",
                 style: TextStyle(
                   fontSize: 15,

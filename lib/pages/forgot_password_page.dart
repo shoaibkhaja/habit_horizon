@@ -83,7 +83,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                 const SizedBox(
                   height: 20,
                 ),
-                CustomOulinedButton(
+                CustomOutlinedButton(
                     buttonText: "Sign Up",
                     onTap: () {
                       Navigator.push(context, MaterialPageRoute(builder: (ctx) {
