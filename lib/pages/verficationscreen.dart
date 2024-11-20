@@ -34,18 +34,17 @@ class _VerficationscreenState extends State<Verficationscreen> {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(
-              horizontal: 16.0), // Adjust the horizontal margin
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const SizedBox(height: 30), // Add spacing from the top
+              const SizedBox(height: 30),
               SvgPicture.asset(
-                'assets/forget_password/mail_illustration.svg', // Ensure the path is correct
+                'assets/forget_password/mail_illustration.svg',
                 height: 180,
                 width: 180,
               ),
-              const SizedBox(height: 16), // Add spacing between image and text
+              const SizedBox(height: 16),
               const Row(
                 children: [
                   Text(
@@ -58,14 +57,14 @@ class _VerficationscreenState extends State<Verficationscreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: 8), // Reduced spacing
+              const SizedBox(height: 8),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: List.generate(
                   6,
                   (index) => SizedBox(
-                    width: 45, // Slightly smaller width
-                    height: 45, // Slightly smaller height
+                    width: 45,
+                    height: 45,
                     child: TextField(
                       keyboardType: TextInputType.number,
                       textAlign: TextAlign.center,
@@ -85,7 +84,7 @@ class _VerficationscreenState extends State<Verficationscreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 24), // Reduced spacing before the button
+              const SizedBox(height: 24),
               CustomColoredButton(buttonText: "Verify", onTap: () {})
             ],
           ),

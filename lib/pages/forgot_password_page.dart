@@ -59,10 +59,11 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                 ),
                 const SizedBox(
                     height: 32), // Add some space before the text field
-                const CustomTextfield(
+                CustomTextfield(
                   hintText: 'Enter your email',
                   labelText: 'Email',
-                  prefixIcon: Icon(Icons.email),
+                  prefixIcon:
+                      Image.asset("assets/signup_and_login_page/mail_icon.png"),
                 ),
                 const SizedBox(height: 32),
                 CustomColoredButton(buttonText: "Send", onTap: () {}),

@@ -55,37 +55,32 @@ class _SignUpPageState extends State<SignUpPage> {
             CustomTextfield(
                 hintText: "Enter Your UserName",
                 labelText: "User Name",
-                prefixIcon: SvgPicture.asset(
-                  "assets/signup_and_login_page/user_icon.svg",
-                  height: 10,
-                  width: 10.00,
-                )),
-            const SizedBox(
-              height: 20,
-            ),
-            const CustomTextfield(
-                hintText: "Enter Your Email",
-                labelText: "Email",
-                prefixIcon: Icon(Icons.mail_outline_sharp)),
+                prefixIcon:
+                    Image.asset("assets/signup_and_login_page/user_icon.png")),
             const SizedBox(
               height: 20,
             ),
             CustomTextfield(
-              hintText: "Enter Your Password",
-              labelText: "Password",
-              prefixIcon: SvgPicture.asset(
-                'assets/signup_and_login_page/key_icon.svg',
-                height: 10,
-                width: 10,
-              ),
-            ),
+                hintText: "Enter Your Email",
+                labelText: "Email",
+                prefixIcon:
+                    Image.asset("assets/signup_and_login_page/mail_icon.png")),
             const SizedBox(
               height: 20,
             ),
-            const CustomTextfield(
+            CustomTextfield(
+                hintText: "Enter Your Password",
+                labelText: "Password",
+                prefixIcon:
+                    Image.asset("assets/signup_and_login_page/key_icon.png")),
+            const SizedBox(
+              height: 20,
+            ),
+            CustomTextfield(
                 hintText: "Confirm Your Password",
                 labelText: "Confirm Password",
-                prefixIcon: Icon(Icons.key)),
+                prefixIcon:
+                    Image.asset("assets/signup_and_login_page/key_icon.png")),
             const SizedBox(
               height: 25,
             ),
